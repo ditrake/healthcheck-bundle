@@ -1,0 +1,30 @@
+{
+  "type": "symfony-bundle",
+  "name": "ditrake/healthcheck",
+  "description": "Bundle for check accessibility your services.",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Sergey Razin",
+      "email": "ditrake.gm@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "ext-json": "*",
+    "symfony/flex": "^1.3.1",
+    "sensio/framework-extra-bundle": "^4.0|^5.4",
+    "symfony/yaml": "^4.4|^5.0",
+    "doctrine/persistence": "^3.0",
+    "doctrine/dbal": "^4.0"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Srr\\HealthCheckBundle\\": "src/"
+    }
+  }
+}
